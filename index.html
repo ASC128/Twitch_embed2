@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Twitch Stream</title>
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+</head>
+<body>
+    <div id="twitch-embed"></div>
+
+    <script>
+        new Twitch.Embed("twitch-embed", {
+            width: "100%",
+            height: "100%",
+            channel: "KaineEdge1959", // Change dynamically if needed
+            parent: [window.location.hostname] // Auto-detects domain
+        });
+    </script>
+</body>
+</html>
