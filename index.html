@@ -16,7 +16,7 @@ $channel = isset($_GET['channel']) ? htmlspecialchars($_GET['channel']) : 'twitc
     <h2>正在观看 Twitch 直播: <?php echo $channel; ?></h2>
 
     <iframe
-        src="https://player.twitch.tv/?channel=<?php echo $channel; ?>&autoplay=true&muted=false"
+        src="https://player.twitch.tv/?channel=<?php echo $channel; ?>&parent=<?php echo $parentDomain; ?>&autoplay=true&muted=false"
         height="480"
         width="720"
         allowfullscreen>
